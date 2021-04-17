@@ -90,6 +90,10 @@ def load_enen(day):
     primaryoutput.close()
     fulloutput.close()
 
+# crawl words from quizlet (on developer console): 
+# console.log(Object.entries(window.Quizlet.setPageData.termIdToTermsMap).map(x => x[1].word).join('\n'))
 
-for i in range(31, 50 + 1):
+start = 1
+end = 50
+for i in range(start, end + 1):
     load_enen(i)
